@@ -69,6 +69,14 @@
 // 23432 -> да
 
 
+// void number(int number)
+// {
+ 
+// int index = 0;
+
+
+// }
+
 
 
 
@@ -91,11 +99,29 @@
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
-// A (3,6,8); B (2,1,-7), -> 15.84
 
-// A (7,-5, 0); B (1,-1,9) -> 11.53
+void programm(int xA, int yA, int zA, int xB, int yB, int zB)
+{
+int x = xB -xA;
+int y = yB - yA;
+int z = zB - zA;
 
-// Задача 23
+   Math.Sqrt (( xA-xB )*( xA-xB )  + ( yA-yB )*( yA-yB ) + ( zA - zB ) * ( zA - zB )   );
+}
+
+Console.WriteLine ("введите координаты первой точки ");
+int xA = Convert.ToInt32(Console.ReadLine());
+int yA = Convert.ToInt32(Console.ReadLine());
+int zA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("введите координаты второй точки ");
+int xB = Convert.ToInt32(Console.ReadLine());
+int yB = Convert.ToInt32(Console.ReadLine());
+int zB = Convert.ToInt32(Console.ReadLine());
+
+int dist =
+ programm (xA, yA, zA, xB, yB, zB);
+
+ Console.WriteLine ($"расстояние между двуми точками {dist}");
 
 
 
@@ -104,34 +130,24 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+//задача 23
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-void number(int number)
-{
-    int index = 1;
-    Console.Write($"Ответ будет: ");
-    while(index <= number)
-    {
-        int kyb = index * index * index;
-        index ++;
-        Console.Write($"{kyb}, ");
-    }
-}
-Console.Write("Введите число: "); // запрашиваем число
-int num_1 = Convert.ToInt32(Console.ReadLine()); // получаем от пользователя число
-number(num_1);
+// void number(int number)
+// {
+//     int index = 1;
+//     Console.Write($"Ответ будет: ");
+//     while(index <= number)
+//     {
+//         int kyb = index * index * index;
+//         index ++;
+//         Console.Write($"{kyb}, ");
+//     }
+// }
+// Console.Write("Введите число: "); // запрашиваем число
+// int num_1 = Convert.ToInt32(Console.ReadLine()); // получаем от пользователя число
+// // number(num_1);
