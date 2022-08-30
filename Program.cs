@@ -1,59 +1,4 @@
-﻿// Задача 2. Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
-
-// void Diaposon(int number)
-// {
-//     if(number == 1) Console.WriteLine("X - положительный (больше нуля), Y - положительный(больше нуля)");
-//     if(number == 2) Console.WriteLine("X - отрицательный (меньше нуля), Y - положительный(больше нуля)");
-//     if(number == 3) Console.WriteLine("X - отрицательный (менше нуля), Y - отрицательный(меньше нуля)");
-//     if(number == 4) Console.WriteLine("X - положительный (больше нуля), Y - отрицательный(меньше нуля)");
-//     if(number < 1 ^^ number > 4) Console.WriteLine("Некоректный ввод");
-// }
-
-// Console.Write("Введите число номер четверти: "); // запрашиваем число
-// int num_1 = Convert.ToInt32(Console.ReadLine()); // получаем от пользователя число
-// Diaposon(num_1);
-
-//  Задача 3. Напишите программу, которая принимает на вход число (n) и выдаёт квадраты чисел от 1 до n.
-
-// void number(int number)
-// {
-//     int index = 1;
-//     Console.Write($"Ответ будет: ");
-//     while(index <= number)
-//     {
-//         int square = index * index;
-//         index ++;
-//         Console.Write($"{square}, ");
-//     }
-// }
-// Console.Write("Введите число: "); // запрашиваем число
-// int num_1 = Convert.ToInt32(Console.ReadLine()); // получаем от пользователя число
-// number(num_1);
-
-// Задача 4. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
-// void programm(int xA, int xB, int yA, int yB)
-// {
-//     int result_1 = xA  
-// }
-
-
-
-
-// while (a)
-// {
-//     int index = 1;
-//     Console.WriteLine(ответ будет)
-//     }
-//     while (index < number)
-//     {
-//         int square = index * number;
-//         Console.WriteLine(ответ будет)
-//     }
-
-//  Console.WriteLine ("введите номер четверти");
-// int num_1 = Convert.ToInt32(Console.ReadLine());
-// VoidDiaposon(num_1);
-
+﻿
 
 
 // ДЗ! 
@@ -69,27 +14,30 @@
 // 23432 -> да
 
 
-// void number(int number)
+
+// void Pal ( int num)
 // {
- 
-// int index = 0;
+//     int n_1 = num / 10000; 
+//     int n_2 = (num / 1000) % 10; 
+//     int n_4 = ( num % 100 ) / 10; 
+//     int n_5 = ( num % 10); 
 
-
+//     if ( num > 99999 || num < -99999) Console.WriteLine("Введите 5ти значное число!");
+//     {
+//         if ( n_1 == n_5)
+//             {
+//                 if ( n_2 == n_4) Console.WriteLine("Число является палиндромом");
+//             }
+                
+            
+//     }
+    
 // }
 
+// Console.WriteLine("Введите 5ти значное число: ");
+// int num_enter = Convert.ToInt32(Console.ReadLine());
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Pal(num_enter);
 
 
 
@@ -100,28 +48,28 @@
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
 
-void programm(int xA, int yA, int zA, int xB, int yB, int zB)
-{
-int x = xB -xA;
-int y = yB - yA;
-int z = zB - zA;
+// double Prost (double x1, double y1, double z1, double x2, double y2, double z2)
+// {
+//     double xx = (x2 - x1) * (x2 - x1);
+//     double yy = (y2 - y1) * (y2 - y1);
+//     double zz = (z2 - z1) * (z2 - z1);
 
-   Math.Sqrt (( xA-xB )*( xA-xB )  + ( yA-yB )*( yA-yB ) + ( zA - zB ) * ( zA - zB )   );
-}
+//     return Math.Sqrt ((xx + yy + zz)); 
 
-Console.WriteLine ("введите координаты первой точки ");
-int xA = Convert.ToInt32(Console.ReadLine());
-int yA = Convert.ToInt32(Console.ReadLine());
-int zA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine ("введите координаты второй точки ");
-int xB = Convert.ToInt32(Console.ReadLine());
-int yB = Convert.ToInt32(Console.ReadLine());
-int zB = Convert.ToInt32(Console.ReadLine());
+// }
 
-int dist =
- programm (xA, yA, zA, xB, yB, zB);
+// Console.WriteLine("Enter coordinates for point 1: ");
+// double dot1_x = Convert.ToInt32(Console.ReadLine());
+// double dot1_y = Convert.ToInt32(Console.ReadLine());
+// double dot1_z = Convert.ToInt32(Console.ReadLine());
 
- Console.WriteLine ($"расстояние между двуми точками {dist}");
+// Console.WriteLine("Enter coordinates for point 2: ");
+// double dot2_x = Convert.ToInt32(Console.ReadLine());
+// double dot2_y = Convert.ToInt32(Console.ReadLine());
+// double dot2_z = Convert.ToInt32(Console.ReadLine());
+
+// double res = Prost( dot1_x, dot1_y, dot1_z, dot2_x, dot2_y, dot2_z);
+// Console.WriteLine(res);
 
 
 
